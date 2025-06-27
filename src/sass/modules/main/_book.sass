@@ -1,0 +1,63 @@
+.book
+    @include flex(column, center, center, 0)
+
+    .booking
+        @include flex(row, center, center, 0)
+        width: 100%
+        padding-bottom: 100px
+
+        .source
+            width: 31%
+
+            img
+                width: 100%
+                height: 100%
+
+        .details
+            @include flex(column, center, center, 20px)
+            width: 65%
+            padding: 70px
+            background-color: #f9f9f9
+
+            form
+                width: 100%
+                @include flex(column, center, center, 20px)
+
+                div
+                    @include flex(row, center, center, 20px)
+                    flex-wrap: wrap
+                    width: 100%
+                    height: 100%
+
+                    input
+                        border: 1px solid #d9d9d9
+                        background-color: #fefefe
+                        width: 30%
+                        font-size: 11px
+                        display: flex
+                        justify-content: center
+                        padding: 5px 10px 5px 10px
+                        &:focus
+                            outline: none
+                            border-color: $lightorange
+                
+                .aria
+                    width: 97%
+                    height: 15vh
+                    
+                    textarea
+                        background-color: #fefefe
+                        border: 1px solid #b3b3b3
+                        width: 100%
+                        height: 100%
+                        font-size: 12px
+                        padding: 5px 0 5px 10px
+                        &:focus
+                            outline: none
+                            border-color: $lightorange
+            button    
+                border: none
+                background-color: $lightorange
+                padding: 10px 35px
+                color: #fff
+                font-size: 11px

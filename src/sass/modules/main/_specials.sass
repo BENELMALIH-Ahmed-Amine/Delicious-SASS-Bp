@@ -1,0 +1,42 @@
+.specials_1
+    @include flex(row, center, center, 30px)
+
+    ul
+        width: 60%
+        li
+            font-family: satisfy
+            list-style: none
+            border-right: 1px solid $lightorange
+            color: #000 !important
+            font-size: 10px
+            font-weight: 700
+            padding: 8px 0
+            margin: 5px 0
+            &:hover
+                color: $lightorange
+
+    .specials_unit
+        display: flex
+        .specials_description
+            
+            h3
+                font-family: satisfy
+                color: #000
+                font-size: 26px
+
+            p
+                font-size: 13px
+                color: #7c7c7c
+
+        .specials_img
+            width: 70%
+            img
+                width: 100%
+
+.specials_1
+    .specials_unit
+        display: none
+    input
+        display: none
+        &:checked+.specials_unit
+            display: flex

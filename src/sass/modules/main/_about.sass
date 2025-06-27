@@ -1,0 +1,51 @@
+// general
+main
+    @include flex(column, center, center, 0)
+    width: 100%
+    padding: 0
+
+    .about, .why, .menu, .specials, .event, .book, .chefs
+        width: 100%
+        padding: 50px 15% 35px 15%
+// end general
+    
+.about
+    background-color: #fffaf3
+    @include flex(row, center, center, 0)
+
+    .source
+        @include flex(column, center, center, 0)
+        width: 48%
+        height: 400px
+        margin: 0 10px
+        margin-bottom: 70px
+
+
+    .details
+        @include flex(column, center, center, 0)
+        width: 48%
+        height: 370px
+        margin: 10px
+
+        .details_1
+            width: 100%
+
+            h3
+                font-family: satisfy
+                font-size: 28px
+            
+            p
+                font-style: italic
+
+        .details_2
+            padding: 0
+            
+            div
+                @include flex(row, start, start, 0)
+                gap: 10px
+                
+                i
+                    color: $lightorange
+                
+                li
+                    list-style: none

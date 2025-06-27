@@ -1,0 +1,62 @@
+// general
+.head
+    @include flex(column, center, center, 10px)
+    margin-bottom: 30px
+
+    div
+        @include flex(row, center, center, 0)
+        background-color: #fff7eb
+        padding: 5px 15px
+        border-radius: 30px
+
+        h2
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 15px
+            color: $lightorange
+            opacity: 1
+            margin-bottom: 1px
+
+    p
+        font-family: satisfy
+        font-weight: bold
+        font-size: 34px
+        span
+            color: $lightorange
+// end general
+
+.why_1
+    @include flex(row, center, center, 20px)
+
+    a
+        text-decoration: none
+        @include flex(column, center, start, 15px)
+        background-color: #f9f9f9
+        color: #000
+        padding: 50px 30px 45px 30px
+        &:hover
+            background-color: $lightorange
+            
+            div
+                span
+                    color: #fff
+            h3, p
+                color: #fff
+
+        div
+            span
+                color: $lightorange
+                font-size: 24px
+                font-weight: bold
+        
+        h3
+            font-family: satisfy
+            font-size: 24px
+
+        p
+            font-size: 15px
+            color: grey
+
+@media (max-width: 368px) 
+    .why_1
+        flex-wrap: wrap

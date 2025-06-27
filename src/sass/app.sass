@@ -1,0 +1,30 @@
+// add to bootstrap
+@import ../../node_modules/bootstrap/scss/functions
+@import ../../node_modules/bootstrap/scss/variables
+
+
+$lightorange: #ffb03b
+
+$colors: ("lightorange": $lightorange)
+
+$theme-colors: map-merge($colors , $theme-colors)
+
+// add a font 
+@import https://fonts.googleapis.com/css2?family=Satisfy&display=swap
+    
+    
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+@import ../../node_modules/bootstrap-icons/font/bootstrap-icons.css
+
+
+
+@import ./_variables
+@import ./modules/header/_header.sass
+@import ./modules/main/_about.sass
+@import ./modules/main/_why.sass
+@import ./modules/main/_menu.sass
+@import ./modules/main/_specials.sass
+@import ./modules/main/_event.sass
+@import ./modules/main/_book.sass
+@import ./modules/main/_gallery.sass
+@import ./modules/main/_chefs.sass

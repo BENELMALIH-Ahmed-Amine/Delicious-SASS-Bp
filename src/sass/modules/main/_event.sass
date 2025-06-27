@@ -1,0 +1,43 @@
+.event
+    background-image: url(../images/events/events-bg.jpg) !important
+    background-repeat: no-repeat
+    background-size: contain
+    background-size: 100% 100%
+
+    // background-position: 0 -100px
+    @include flex(row, center, center, 0)
+
+    .source
+        @include flex(row, center, center, 0)
+        padding: 50px 0
+        .myevents_carousel
+            @include flex(row, start, center, 0)
+            width: 100%
+            height: 450px
+            background: #d3d0d032
+
+            div
+                button
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+
+            .slider
+                width: 50%
+                height: 100%
+                .slider1, .slider2, .slider3
+                    display: flex
+                    width: 50%
+                    height: 100%
+                    img
+                        width: 50%
+                        height: 100%
+
+                    div
+                        color: #b41c1c
+                        z-index: 44
+            // p
+            //     margin-left: 400px
+            //     color: #964bf2
+            //     width: 50%
+            //     z-index: 5555

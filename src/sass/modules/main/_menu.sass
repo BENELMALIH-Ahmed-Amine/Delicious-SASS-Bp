@@ -1,0 +1,73 @@
+.menu_nav
+    @include flex(row, center, center, 20px)
+    padding: 0 0 50px 0 
+
+.menu_1
+    @include flex(row, start, center, 50px 0)
+    flex-wrap: wrap
+
+    .menu_unit
+        @include flex(row, start, start, 10px)
+        width: 49%
+
+        .menu_img
+            width: 60px
+            border-radius: 50%
+            img
+                width: 100%
+                border-radius: 50%
+                border: 7px solid #ececec
+
+        .menu_description
+            div
+                @include flex(row, space-between, center, 0)
+                a
+                    text-decoration: none
+                    color: #000
+                    font-size: 16px
+                    font-weight: 700
+                    &:hover
+                        color: $lightorange
+                    &::after
+                        content: '.................................................................................'
+                        color: #b4b4b4
+                        font-size: 7px
+                        letter-spacing: 1.5px
+                
+                span
+                    color: $lightorange
+                    display: block
+                    font-size: 16px
+                    font-weight: 700
+            
+            p
+                font-size: 13px
+
+
+
+
+
+// navigation
+label
+    font-family: satisfy
+    color: #7c7c7c
+    font-size: 14px
+    &:hover
+        color: $lightorange
+
+
+// #starters
+//     display: none
+
+//     &:checked+div
+//         display: none
+
+
+// .sala
+//     &:checked
+        
+        
+// .spec
+//     &:checked
+        
+//end  navigation
